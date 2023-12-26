@@ -7,10 +7,10 @@
 pgrep -f "neofetch" || kitty --class="my_scripted_kitty" --title "neofetch" &
 
 # Start htop in Kitty if not already running
-pgrep -f "htop" || kitty --class="my_scripted_kitty" --title "htop" sh -c 'htop' &
+pgrep -f "bpytop" || kitty --class="my_scripted_kitty" --title "bpytop" sh -c 'bpytop' &
 
 # Start Spotify TUI if not already running
-pgrep -f "spt" || kitty --class="my_scripted_kitty" --title "lf" sh -c 'lf /home/infinity ' &
+pgrep -f "lf" || kitty --class="my_scripted_kitty" --title "lf" sh -c 'lf /home/infinity ' &
 
 # Start cava if not already running
 pgrep -f "cava" || kitty --class="my_scripted_kitty" --title "cava" sh -c 'cava | lolcat' &
@@ -35,22 +35,22 @@ sleep 4
 set -x
 
 #Resize and more neofetch
-wmctrl -F -r "neofetch" -e 0,15,49,1049,486
+wmctrl -F -r "neofetch" -e 0,15,30,1052,486
 
-# Resize and move htop
-wmctrl -F -r "htop" -e 0,15,563,1050,515
+# Resize and move bpytop
+wmctrl -F -r "bpytop" -e 0,15,545,1052,532
 
-# Resize and move Spotify TUI
-wmctrl -F -r "lf" -e 0,3655,441,1052,1095
+# Resize and move lf
+wmctrl -F -r "lf" -e 0,3655,429,1052,1093
 
 # Resize and move cava
-wmctrl -F -r "cava" -e 0,3656,1566,1052,338
+wmctrl -F -r "cava" -e 0,3655,1551,1052,338
 
 # Resize and move btop
-wmctrl -F -r "btop" -e 0,3655,42,1052,370
+wmctrl -F -r "btop" -e 0,3655,30,1052,370
 
 # Resize and move cmatrix
-wmctrl -F -r "cmatrix" -e 0,15,1106,1050,790
+wmctrl -F -r "cmatrix" -e 0,15,1106,1052,784
 
 # End debugging mode
 set +x
