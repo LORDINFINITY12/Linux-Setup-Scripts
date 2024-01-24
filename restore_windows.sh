@@ -3,6 +3,8 @@
 # Start applications in Kitty terminals if they are not already running
 # The '--title' option sets the window title for easy identification
 
+killall lf
+
 #start neofetch in kitty if not already running
 pgrep -f "neofetch" || kitty --class="my_scripted_kitty" --title "neofetch" &
 
@@ -10,10 +12,10 @@ pgrep -f "neofetch" || kitty --class="my_scripted_kitty" --title "neofetch" &
 pgrep -f "bpytop" || kitty --class="my_scripted_kitty" --title "bpytop" sh -c 'bpytop' &
 
 # Start Spotify TUI if not already running
-pgrep -f "lf" || kitty --class="my_scripted_kitty" --title "lf" sh -c 'lf /home/infinity ' &
+pgrep -f "lf" || kitty --class="my_scripted_kitty" --title "lf" sh -c 'lf /home/infinity/' &
 
 # Start cava if not already running
-pgrep -f "cava" || kitty --class="my_scripted_kitty" --title "cava" sh -c 'cava | lolcat' &
+pgrep -f "cava" || kitty --class="my_scripted_kitty" --title "cava" sh -c 'cava' &
 
 # Start btop if not already running
 pgrep -f "btop" || kitty --class="my_scripted_kitty" --title "btop" btop &
@@ -22,7 +24,7 @@ pgrep -f "btop" || kitty --class="my_scripted_kitty" --title "btop" btop &
 pgrep -f "cmatrix" || kitty --class="my_scripted_kitty" --title "cmatrix" sh -c 'cmatrix | lolcat' &
 
 # Wait for the desktop to load and applications to start
-sleep 4
+sleep 6
 
 # Resize and move windows using `wmctrl`
 # Replace 'WINDOW_TITLE' with the actual titles used in the --title option above
