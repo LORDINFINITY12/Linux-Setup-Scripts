@@ -3,8 +3,6 @@
 # Start applications in Kitty terminals if they are not already running
 # The '--title' option sets the window title for easy identification
 
-killall lf
-
 #start neofetch in kitty if not already running
 pgrep -f "neofetch" || kitty --class="my_scripted_kitty" --title "neofetch" &
 

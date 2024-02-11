@@ -1,7 +1,6 @@
 adw-gtk3-git
 androidscreencast-bin
 bibata-cursor-theme
-cava
 cfiles
 clamav-unofficial-sigs
 cmatrix-git
@@ -32,9 +31,7 @@ nvm
 ocs-url
 odin4-cli
 pacseek
-paru-bin
 pfetch
-picom-git
 plex-media-server-plexpass
 pm2ml
 properties-cpp
